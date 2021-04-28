@@ -1,0 +1,76 @@
+
+.ourCourseSec .btnLeft {
+  position: absolute;
+  margin-top: 165px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid white;
+  opacity: 0.3;
+  margin-left: 20px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+.ourCourseSec .btnLeft:before {
+  content: "";
+  position: absolute;
+  background: rgba(200, 200, 200, 0.4);
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  margin-left: -15px;
+  margin-top: -25px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+.ourCourseSec .btnLeft:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.ourCourseSec .btnLeft:hover:before {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.ourCourseSec .btnRight {
+  position: absolute;
+  margin-top: 165px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid white;
+  opacity: 0.5;
+  margin-left: 565px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+.ourCourseSec .btnRight:before {
+  content: "";
+  position: absolute;
+  background: rgba(200, 200, 200, 0.4);
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  margin-left: -35px;
+  margin-top: -25px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+.ourCourseSec .btnRight:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.ourCourseSec .btnRight:hover:before {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+}

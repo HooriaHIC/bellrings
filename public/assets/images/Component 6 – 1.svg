@@ -1,0 +1,27 @@
+<svg id="Component_6_1" data-name="Component 6 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="643" height="661" viewBox="0 0 643 661">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_45" data-name="Rectangle 45" width="643" height="661" transform="translate(1378 1615)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1000 667">
+      <image width="1000" height="667" xlink:href="../../../../../../../../mockups/client/mohammad%20irfan/assets/images/sh14.jpg"/>
+    </pattern>
+    <filter id="cc39ba10bc083bebce9b16f485e0b436" x="-148.5" y="-98.5" width="940" height="958" filterUnits="userSpaceOnUse">
+      <feOffset dy="50" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(-1378 -1615)" clip-path="url(#clip-path)">
+    <g transform="matrix(1, 0, 0, 1, 1378, 1615)" filter="url(#cc39ba10bc083bebce9b16f485e0b436)">
+      <rect id="cc39ba10bc083bebce9b16f485e0b436-2" data-name="cc39ba10bc083bebce9b16f485e0b436" width="643" height="661" fill="url(#pattern)"/>
+    </g>
+    <g id="Group_43" data-name="Group 43" transform="translate(0 29)">
+      <rect id="Rectangle_41" data-name="Rectangle 41" width="643" height="525" transform="translate(1378 2088)" fill="#fff"/>
+      <text id="I_sell_enterprise_software_in_Saas" data-name="I sell enterprise software in Saas" transform="translate(1436 2109)" fill="#fff" font-size="45" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="47">I Sell Enterprise </tspan><tspan x="0" y="102">Software In Saas</tspan></text>
+      <text id="Phasellus_dictum_consectetur_nisl_eu_congue._Morbi_pharetra_suscipit_orci_at_laoreet_lorem._Quisque_mauris_nunc_posuere_pharetra_nulla_sit_amet_interdum_ultricies_nisl._Fusce_eu_posuere_magna._Nulla_rutrum_felis_ut_tempus_sagittis." data-name="Phasellus dictum consectetur nisl eu congue. Morbi pharetra suscipit orci, at laoreet lorem. Quisque mauris nunc, posuere pharetra nulla sit amet, interdum ultricies nisl. Fusce eu posuere magna. Nulla rutrum felis ut tempus sagittis." transform="translate(1436 2247)" fill="#fff" font-size="30" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="32">Phasellus dictum consectetur nisl </tspan><tspan x="0" y="72">eu congue. Morbi pharetra suscipit </tspan><tspan x="0" y="112">orci, at laoreet lorem. Quisque </tspan><tspan x="0" y="152">mauris nunc, posuere pharetra </tspan><tspan x="0" y="192">nulla sit amet, interdum ultricies </tspan><tspan x="0" y="232">nisl. Fusce eu posuere magna. </tspan><tspan x="0" y="272">Nulla rutrum felis ut tempus </tspan><tspan x="0" y="312">sagittis.</tspan></text>
+    </g>
+  </g>
+</svg>
