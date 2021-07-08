@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <>
     <Layout className="container" OnHomePage={true} dontShowFooter={true}>
-      <h1 className="biggerHeading">Sell More <br /> Enterprise Software <br /> And SaaS.</h1>
+      <h1 className="biggerHeading">Sell more <br /> Enterprise software <br /> and SaaS.</h1>
       <div className="row">
-        <div className="column" style={{"flex": 1}}>
+        <div className="column chooseText" style={{"flex": 1}}>
           <p className="whoAreYouTxt">
             Please Select, Who Are You From The Respective Boxes In Order To Proceed <br /> Forward.
           </p> 
@@ -36,7 +36,7 @@ const Home = () => {
             </svg>
           </div>
         </div>
-        <div className="column" style={{"flex": 2.5}}>
+        <div className="column colTwo" style={{"flex": 2.5}}>
           <div className="row cardStack">
             <BlurredOverlayCard 
               link="/audience1"
@@ -45,13 +45,13 @@ const Home = () => {
               content="Sed tincidunt eleifend nulla, sed scelerisque nulla lacinia at. Vestibulum iaculis porttitor sapien vel facilisis. Pellentesque lacinia enim nibh, non varius erat fermentum sit amet. "
             />
             <BlurredOverlayCard 
-              link="/audience1"
+              link="/audience2"
               image="/assets/images/Sh6.jpg" 
               title="I Manage A Sales Professional Team" 
               content="Sed tincidunt eleifend nulla, sed scelerisque nulla lacinia at. Vestibulum iaculis porttitor sapien vel facilisis. Pellentesque lacinia enim nibh, non varius erat fermentum sit amet. "
             />
             <BlurredOverlayCard
-              link="/audience1" 
+              link="/audience3" 
               image="/assets/images/sh3.jpg" 
               title="I Am CEO Of A Sales Company" 
               content="Sed tincidunt eleifend nulla, sed scelerisque nulla lacinia at. Vestibulum iaculis porttitor sapien vel facilisis. Pellentesque lacinia enim nibh, non varius erat fermentum sit amet. "
@@ -101,6 +101,5 @@ const Home = () => {
     </>
   );
 };
-
 
 export default Home;

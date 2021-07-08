@@ -1,13 +1,16 @@
 :root{
   --main-color: #000;
   --primary-color: #fff;
-  --accent-color: #459;
+  --accent-color: #35B58F;
   --lighter-primary-1: rgba(255, 255 , 255, 0.29);
   --lighter-primary-2: rgba(255, 255 , 255, 0.35);
   --lighter-primary-3: rgba(255, 255 , 255, 0.50);
   --lighter-primary-4: rgba(255, 255 , 255, 0.75);
   --secondary-color: #161616;
+  --red: #e2001a;
+--transition: ease-in-out .4s;
 }
+
 
 html,
 body {
@@ -49,7 +52,7 @@ a {
 .basicNavbar{
   background-color:transparent;
   height: 110px;
-  z-index: 9999;
+  z-index: 120 !important;
   top: -1px;
   position: sticky;
   display: flex;
@@ -64,7 +67,7 @@ a {
 .MainNavbar{
   background-color:transparent;
   height: 110px;
-  z-index: 9999;
+  z-index: 100;
   top: -1px;
   position: sticky;
   display: flex;
@@ -142,6 +145,7 @@ a {
   font-weight: 620;
 }
 
+
 .row{
   display: flex;
   flex-direction: row;
@@ -176,16 +180,20 @@ a {
 .whoAreYouTxt{
   font-size: 17px;
   line-height: 27px;
-  color: var(--lighter-primary-3);
+  color: var(--lighter-primary-4);
 }
 
 .CTABtn{
-  width: 150px;
+  width: 170px;
+  margin-right: 1.5vw !important;
+  margin-bottom: 20px;
+
 }
 
 .whatWeDo{
-  width: 170px;
-  margin-left: 3vw;
+  width: 150px;
+  margin-right: 1.5vw !important;
+  margin-bottom: 20px;
 }
 
 .blurredOverlayCard{
@@ -304,7 +312,6 @@ a {
   margin-left: 0;
   margin-top: 20px;
   font-size: 18px;
-  text-transform: capitalize;
   color: var(--lighter-primary-1);
   font-weight: 400;
   line-height: 28px;
@@ -443,7 +450,7 @@ a {
 
 .startOfBody{
   width: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
 }
 
 .authorBox{
@@ -463,13 +470,15 @@ a {
 
 .header{
   min-height: 90vh;
+  height: 90vh;
   width: 100%;
   background: #000;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: bottom;
   perspective: 2px;
   display: flex;
-  margin-top: -110px;
+  margin-top: -135px;
   align-items: center;
   background-size: cover;
   z-index: 0;
@@ -482,32 +491,67 @@ a {
   margin-top: 14vh;
 }
 
+
 .blackBox{
   width: 100%;
   height: auto;
   background-color: var(--main-color);
 }
 
+
 /*~~~~~~~~~~~~~~~~~~~~~~ Logo sider ~~~~~~~~~~~~~~~~~~~~~~~~~`*/
 
 
+.Audience2Custom{
+width: 100%;
+margin-top: -10px;
+background-color: #0f0f0f;
+padding-bottom: 4rem;
+padding-right: 4rem;
+}
 /*~~~~~~~~~~~~~~~~~~~~ Comparison ~~~~~~~~~~~~~~~~~~`*/
 .comparisonAudience1{
   width: 100%;
+  background: var(--secondary-color);
 }
 
+.linksArea{
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 4em;
+}
+
+.linksArea li::marker{
+  color: var(--primary-color);
+}
+
+.linksArea li a:hover{
+  color: var(--accent-color)
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ Interim Sale Vp ~~~~~~~~~~~~~~~~~~~~*/
+.InterimSaleVp{
+  padding: 4rem;
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~ Growth Trajectory ~~~~~~~~~~~~~~~~~~~~~*/
+.GrowingTrajectory{
+  padding: 4rem;
+  background-color: var(--main-color);
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~ Our Course ~~~~~~~~~~~~~~~~~~~~~~~~~`*/
 
 .ourCourseSec{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
 }
 
 .ourCourseWatermark{
-  right: 40px;
-  margin-top: -250px;
+  right: 50px;
   position: absolute;
   z-index: 0;
 }
@@ -576,10 +620,18 @@ button:active, button:focus, button:hover{
   display: none;
 }
 
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~ Steps ~~~~~~~~~~~~~~~~~~~~~*/
+.stepSecAudience3{
+  background-color: var(--secondary-color);
+  padding-top: 0 !important;
+  padding-bottom: 300px;
+}
+
 .stepSec{
   background-color: var(--secondary-color);
-  padding-bottom: 300px;
+  padding-top: 0 !important;
+  padding-bottom: 100px;
 }
 
 g[data-name="cloud"] rect, g[data-name="cloud"] path{
@@ -699,7 +751,7 @@ g[data-name="cloud"].in-view text{
   color:  var(--primary-color);
   line-height: 20px;
   font-weight: 500;
-  width: 40%;
+  width: 55%;
 }
 
 .inlineForm{
@@ -746,7 +798,7 @@ g[data-name="cloud"].in-view text{
 }
 
 .ourServicesBanner{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("/assets/images/IMG-20160119-WA0002.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("/assets/images/bell rings results.jpg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -870,7 +922,7 @@ g[data-name="cloud"].in-view text{
 }
 
 .testimonialSec .pageHeading{
-  margin: 0; margin-top: 2rem; text-align: center;
+  margin: 0; text-align: center;
 }
 
 .viewTestimonials{
@@ -955,7 +1007,6 @@ g[data-name="cloud"].in-view text{
   margin-top: 10px;
   font-size: 35px;
   color: var(--primary-color);
-  text-transform: capitalize;
   font-weight: 600;
   line-height: 40px;
   overflow: hidden;
@@ -997,9 +1048,9 @@ foreignObject input {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~ About Us ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .aboutusImage{
   border-radius: 30px / 30px;
-  width: 50%;
+  width: 40%;
   float: right;
-  margin: 20px;
+  margin: 40px;
   min-width: 450px;
   min-height: 650px;
   align-self: center;
@@ -1151,5 +1202,135 @@ top: 90%;
   margin-left: 1rem;
   cursor: s;
   max-width: 100%;
+}
+
+/* Fullscreen Naviagtion */
+
+.fullscreenOverlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  transition: all 700ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  left: 0;
+  background-color: rgb(0,0,0);
+  overflow-x: hidden;
+}
+
+.menu{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 6rem;
+  text-align: center;
+}
+
+.overlay-content .navbarFooter{
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  right: 0;
+}
+
+.overlay-content .overlayRow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  z-index: 1;
+}
+.overlay-content .overlayRow .overlayRowColumn{
+  display: flex;
+  flex-direction: column;
+}
+.overlay-content .overlayRow .overlayRowColumn.col1{
+  flex: 1;
+}
+.overlay-content .overlayRow .overlayRowColumn.col2{
+  flex: 1.6;
+}
+
+.overlay-content .overlayRow .overlayRowColumn .navSectionCard{
+  height: 120px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.overlay-content .overlayRow .overlayRowColumn .navSectionCard text tspan a{
+  fill: var(--primary-color);
+}
+
+.backdropOnHover{
+  font-size: 40vh;
+  font-weight: 800;
+  opacity: 0.6;
+  color: var(--secondary-color);
+  left: 10vw;
+  position: absolute;
+  z-index: 0;
+}
+
+.overlay-content .overlayRow .overlayRowColumn .navSectionCard:hover text tspan a{
+  fill: var(--accent-color);
+  font-family: Poppins;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+@media(max-width: 1000px) {
+  .overlay-content .overlayRow{
+    display: flex;
+    flex-direction:column;
+    justify-content: center !important;
+    align-items: flex-start !important;
+  }
+  .overlay-content .overlayRow .overlayRowColumn .navSectionCard{
+    height: 100px;
+    margin: 0px;
+    padding: 5px;
+  }
+  .overlay-content .overlayRow .overlayRowColumn.col1{
+    flex: 0.3;
+  }
+  .overlay-content .overlayRow .overlayRowColumn.col2{
+    flex: 0.3;
+  }
+  .overlay-content .navbarFooter{
+    display: none;
+  }
+}
+
+.fullscreenOverlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  z-index: 7;
+}
+
+@media(max-width: 1450px){
+  .CTABtn{
+    width: 140px !important; 
+  }
+  .whatWeDo{
+    width: 140px !important;
+  }
+}
+
+
+@media screen and (max-height: 450px) {
+  .fullscreenOverlay a {font-size: 20px}
+  .fullscreenOverlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
 

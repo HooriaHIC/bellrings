@@ -10,9 +10,9 @@ const About = () => {
                         <img className="aboutusImage mt-5" src="/assets/images/9E0A1174 (1).jpg" />
                         <div className="pageHeading" style={{marginBottom: "0", width: "50%"}}>
                             <span>about us</span>
-                            <h1 style={{width: "80%"}}>Get To Know More About Us</h1>
+                            <h1 style={{width: "100%"}}>Get To Know More About Us</h1>
                         </div> 
-                        <p style={{fontSize: "16px", color: "var(--lighter-primary-4)"}}>
+                        <p style={{fontSize: "16px", color: "var(--lighter-primary-4)", textAlign: "justify"}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique tincidunt arcu non bibendum. Donec a elementum dui, sed commodo lectus. Donec gravida pretium lacus, sed interdum est maximus vitae. Curabitur lobortis porttitor lacinia. Phasellus ultrices, elit at vestibulum accumsan, eros erat porta nisl, at vestibulum tortor purus eget lorem. Phasellus accumsan neque ac urna faucibus maximus. In pellentesque elementum enim, id faucibus ante malesuada eu. Praesent at vulputate lorem, et ullamcorper quam. Duis neque lectus, elementum sed mauris ut, tincidunt aliquet neque. Aliquam vitae elit sit amet ex dignissim imperdiet vitae eu justo.
                             <br />
                             <br />
@@ -29,7 +29,7 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <div className="container" style={{background: "var(--secondary-color)"}}>
+                <div className="container" style={{background: "#111111"}}>
                 <div className="row">
                     <div className="pageHeading" style={{marginBottom: "0"}}>
                         <span>Top Ranked</span>

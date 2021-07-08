@@ -21,14 +21,13 @@ const Article = ({ article, categories }) => {
     <Layout categories={categories}>
       
       <Seo seo={seo} />
-        <div className="row container" style={{alignItems: "center"}}>
-          <div className="column" style={{"flex": 1}}>
+          <div className="column" style={{"flex": 1}} style={{display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "4rem", backgroundImage: `linear-gradient(transparent, rgba(0,0,0,0.6)), url(${imageUrl})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center", marginTop: "-110px", height: "90vh"}}>
             <div
               className="pageHeading"
             >
               <span><Moment format="MMM Do YYYY">{article.published_at}</Moment></span>
-              <h1 style={{"width": "90%"}}>{article.title}</h1>
-              <p style={{"width": "80%"}}>{article.description}</p>
+              <h1 style={{"width": "90%"}} style={{fontSize: "3.5em", lineHeight: "1em"}}>{article.title}</h1>
+              <p style={{"width": "80%"}} style={{color: "rgba(255,255,255,0.8)"}}>{article.description}</p>
               <div className="authorBox">
             <div>
               {article.author.picture && (
@@ -45,12 +44,9 @@ const Article = ({ article, categories }) => {
             </div>
           </div>
             </div>
-          </div>
-          <div className="bannerImageArticle" style={{"backgroundImage": `url(${imageUrl})`}}></div>
-          
-        </div>
+          </div>          
       <div className="startOfBody">
-        <div className="container mt-5">
+        <div className="container" style={{textAlign: "justify"}}>
           <ReactMarkdown source={article.content} escapeHtml={false} className="articleBody" />
         </div>
       </div>

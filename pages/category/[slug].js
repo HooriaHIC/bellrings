@@ -1,26 +1,27 @@
-// import Articles from "../../components/articles";
-// import { fetchAPI } from "../../lib/api";
-// import Layout from "../../components/layout";
-// import Seo from "../../components/seo";
+import Articles from "../../components/articles";
+import { fetchAPI } from "../../lib/api";
+import Layout from "../../components/layout";
+import Seo from "../../components/seo";
 
-// const Category = ({ category, categories }) => {
+const Category = ({ category, categories }) => {
 //   const seo = {
 //     metaTitle: category.name,
 //     metaDescription: `All ${category.name} articles`,
 //   };
 
+    return null;
 //   return (
-//     <Layout categories={categories}>
-//       <Seo seo={seo} />
-//       <div className="uk-section">
-//         <div className="uk-container uk-container-large">
-//           <h1>{category.name}</h1>
-//           <Articles articles={category.articles} />
-//         </div>
-//       </div>
-//     </Layout>
-//   );
-// };
+// //     <Layout categories={categories}>
+// //       <Seo seo={seo} />
+// //       <div className="uk-section">
+// //         <div className="uk-container uk-container-large">
+// //           <h1>{category.name}</h1>
+// //           <Articles articles={category.articles} />
+// //         </div>
+// //       </div>
+// //     </Layout>
+//    );
+};
 
 // export async function getStaticPaths() {
 //   const categories = await fetchAPI("/categories");
@@ -45,4 +46,4 @@
 //   };
 // }
 
-// export default Category;
+export default Category;

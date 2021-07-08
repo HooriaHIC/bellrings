@@ -30,7 +30,7 @@ const Card = ({ article, isRighty }) => {
               <div className="mt-1">
                 <Moment format="MMM Do YYYY" className="cardDate">{article.published_at}</Moment>
                 <Link as={`/article/${article.slug}`} href="/article/[id]">
-                  <h1 className="cardTitleHeading">{article.title}</h1>
+                  <h1 className="cardTitleHeading"><Link as={`/article/${article.slug}`} href="/article/[id]">{article.title}</Link></h1>
                 </Link>
                 <p className="cardBody">
                   {article.content}
