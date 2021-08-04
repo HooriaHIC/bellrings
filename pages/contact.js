@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <>
             <Layout OnHomePage={false} dontShowFooter={true} className="container contactPage" OnContactPage={true}>
-                <div className="row">
+                <div className="row contactRow">
                     <div className="column" style={{flex: 1, paddingTop: '2rem'}}>
                         <div className="pageHeading">
                             <h1 style={{width: "90%"}}>We Would Love To Hear From You.</h1>

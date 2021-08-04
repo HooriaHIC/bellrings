@@ -50,7 +50,7 @@ a {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar Styling ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .basicNavbar{
-  background-color:transparent;
+  background-color: black;
   height: 110px;
   z-index: 120 !important;
   top: -1px;
@@ -62,6 +62,10 @@ a {
   padding-right: 1.5rem;
   flex-wrap: wrap;
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 700ms;
+}
+
+.hiddenMenu {
+  display: none;
 }
 
 .MainNavbar{
@@ -145,11 +149,16 @@ a {
   font-weight: 620;
 }
 
+.colContain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .row{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .column{
@@ -283,6 +292,20 @@ a {
   animation: rotate 1s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+}
+
+.SingleBlogPageHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem;
+  padding-top: 10rem;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.6)), url(http://localhost:1337/uploads/c48a1f71494833_5bc73f6a33005_d2199aace5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: -110px;
+  height: auto;
 }
 
 
@@ -469,7 +492,7 @@ a {
 }
 
 .header{
-  min-height: 90vh;
+  min-height: 650px;
   height: 90vh;
   width: 100%;
   background: #000;
@@ -531,13 +554,11 @@ padding-right: 4rem;
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~ Interim Sale Vp ~~~~~~~~~~~~~~~~~~~~*/
 .InterimSaleVp{
-  padding: 4rem;
-
+  /* Do Something Here... */
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~ Growth Trajectory ~~~~~~~~~~~~~~~~~~~~~*/
 .GrowingTrajectory{
-  padding: 4rem;
   background-color: var(--main-color);
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~ Our Course ~~~~~~~~~~~~~~~~~~~~~~~~~`*/
@@ -685,9 +706,9 @@ g[data-name="cloud"].in-view text{
   flex-direction: column;
 }
 
-.contactFormSec h1{
-  font-size: 60px;
-  line-height: 10px;
+.contactFormSec h1, .content h1{
+  font-size: 60px !important;
+  line-height: 50px !important;
 }
 
 .contactFormSec p{
@@ -713,7 +734,7 @@ g[data-name="cloud"].in-view text{
 }
 
 .freeDealSheetVideo {
-  height: 600px;
+  height: 680px;
   width: 100%;
   object-fit: cover;
   display: block;
@@ -757,6 +778,7 @@ g[data-name="cloud"].in-view text{
 .inlineForm{
   display: flex;
   width: 100%;
+  flex-direction: row;
 }
 .inlineForm input{
   z-index: 3;
@@ -942,6 +964,10 @@ g[data-name="cloud"].in-view text{
 /*~~~~~~~~~~~~~~~~~~~~~~~~ Latest Blog Section ~~~~~~~~~~~~~~~~~~~~~~~~*/
 .latestBlogSection{
   padding-top: 5rem;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .latestBlogSection svg{
@@ -1062,6 +1088,9 @@ foreignObject input {
   min-width: 450px;
   height: auto;
   align-self: center;
+}
+.aboutPage p {
+  font-size: 16px !important;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~ Contact Page ~~~~~~~~~~~~~~~~~~~~*/
@@ -1315,16 +1344,26 @@ top: 90%;
   z-index: 7;
 }
 
-@media(max-width: 1450px){
-  .CTABtn{
-    width: 140px !important; 
-  }
-  .whatWeDo{
-    width: 140px !important;
-  }
+.onlyMobSection{
+  display: none;
 }
 
+.ourCourseSectionWidth{
+  flex: 1.7; 
+  min-width: 400px;
+}
 
+/* Individual media querie * PLEASE DO NOT REMOVE, IF DONE BY ANY REASON 
+THE FOLLOWING COMPONENT MIGHT NOT WORK AS EXPECTED * */
+
+@media(max-width: 1450px){
+  .CTABtn{
+    width: 140px; 
+  }
+  .whatWeDo{
+    width: 140px;
+  }
+}
 @media screen and (max-height: 450px) {
   .fullscreenOverlay a {font-size: 20px}
   .fullscreenOverlay .closebtn {
@@ -1334,3 +1373,558 @@ top: 90%;
   }
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Media Queries for the whole website ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*  1500px and 1550px */
+@media screen and (max-width: 1500px){}
+@media screen and (max-width: 1550px){}
+
+/*  1400px and 1450px */
+@media screen and (max-width: 1400px){}
+@media screen and (max-width: 1450px){
+  body{
+    border: none;
+  }
+}
+
+/*  1300px and 1350px */
+@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 1350px){
+  .colContain {
+    flex-direction: column;
+  }
+  .mt-1 {
+    margin-bottom: 50px;
+  }
+  .contactPage .pageHeading h1 {
+    font-size: 60px;
+    line-height: 70px;
+}
+}
+
+/*  1200px and 1250px */
+@media screen and (max-width: 1200px){}
+@media screen and (max-width: 1250px){
+  .CTABtn {
+    margin-right: 10px !important;
+  }
+}
+
+/*  1100px and 1150px */
+@media screen and (max-width: 1100px){
+  .contactFormSec{
+    width: 100%;
+    padding: 4rem;
+    max-width: 100%;
+    z-index: 4;
+    background-color: var(--main-color);
+    margin: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .stepSec{
+    padding-bottom: 0;
+  }
+  .mt-5{
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 1150px){
+  .aboutPage .pageHeading h1 {
+    font-size: 60px !important;
+    line-height: 70px !important;
+  }
+  .aboutPage p {
+    font-size: 15px !important;
+  }
+}
+
+/*  1000px and 1050px */
+@media screen and (max-width: 1000px){
+  .blurredOverlayCard {
+    width: 250px;
+  }
+  .biggerHeading {
+    font-size: 70px;
+    line-height: 75px;
+  }
+  .whoAreYouTxt {
+    font-size: 15px;
+  }
+  .aboutusImage {
+    min-height: 450px !important;
+    min-width: 400px !important;
+  }
+  .aboutPage .pageHeading h1 {
+    font-size: 50px !important;
+    line-height: 60px !important;
+  }
+  .aboutPage p {
+    font-size: 14px !important;
+  }
+  .ourCourseSec .row{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1050px){}
+
+/*  950px and 950px */
+@media screen and (max-width: 900px){
+  .contactRow {
+    flex-direction: column !important;
+  }
+  .aboutusImage {
+    min-height: 350px !important;
+    min-width: 300px !important;
+  }
+  .topRanked .topImage {
+    flex:auto !important;
+  } 
+  .aboutPage .pageHeading {
+    width: 100% !important;
+  }
+  .topRanked .column .mt-1 {
+    margin-bottom: 0 !important;
+  }
+  .content p {
+    width: 100%;
+  }
+  .inlineForm{
+    flex-direction: column;
+  }
+  .inlineForm button{
+    width: 100%;
+  }
+  .content{
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 950px){
+  .biggerHeading {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .blurredOverlayCard {
+    width: 224px;
+  }
+  .headingAudience{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+/*  800px and 850px */
+@media screen and (max-width: 800px){
+  .aboutPage .pageHeading h1 {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+  .aboutPage p {
+    font-size: 12px !important;
+  }
+  .basicNavbar .middleSide {
+    display: none;
+  }
+  .basicNavbar .rightSide .NavLink {
+    display: none;
+  }
+
+  .hiddenMenu {
+    display: block;
+  }
+  .blurredOverlayCard {
+    width: 190px !important;
+  }
+
+  .onlyWebSection{
+    display: none;
+  }
+  .onlyMobSection{
+    display: block;
+  }  
+
+  .Audience2Custom{
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  foreignObject input{
+    font-size: 60px;
+    padding-left: 30px;
+  }
+  foreignObject input::placeholder {
+    color: #fff;
+    font-size: 60px; 
+    font-family: Poppins-SemiBold, Poppins;
+    font-weight: 600;
+    margin-top: 10px;
+    opacity: .54;
+  }
+  .ourCourseSec .pageHeading h1, .testimonialSec .pageHeading h1{
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+  .ourCourseSec .pageHeading span, .testimonialSec .pageHeading span{
+    display: none;
+  }
+  .ourCourseSec .pageHeading p, .testimonialSec .pageHeading p{
+    font-size: 15px !important;
+    line-height: 25px !important;
+  }
+  .testCardGrid .card h1{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 850px){
+  .MainNavbar .middleSide {
+    display: none;
+  }
+  .blurredOverlayCard {
+    width: 205px;
+  }
+  .whoAreYouTxt {
+    font-size: 14px;
+  }
+  .pageHeading h1 {
+    font-size: 60px !important;
+    line-height: 65px !important;
+  }
+  .biggerHeading {
+    font-size: 60px !important;
+    line-height: 70px !important;
+    margin-top: -20px !important;
+  }
+  .container{
+    padding: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .ourServicesSec{
+    padding: 2rem;
+  }
+  .contactFormSec{
+    padding: 2rem;
+    text-align: center;
+  }
+  .contactFormSec .row .column .btn-1, .contactFormSec .row .column .btn-2{
+    width: 90vw;
+  }
+  .freeDealSheetSec .content{
+    padding: 2rem;
+    padding-top: 4rem;
+  }
+  .freeDealSheetVideo{
+    height: 500px;
+  }
+  .testimonialSec{
+    padding: 2rem 2rem 10rem 2rem;
+  }
+  .latestBlogSection{
+    padding: 2rem;
+  }
+  .latestBlogSection svg{
+    margin-bottom: 2rem;
+  }
+}
+
+/*  700px and 750px */
+@media screen and (max-width: 700px){
+  .colTwo .cardStack .blurredOverlayCard {
+    width: 280px !important;
+    height: 270px !important;
+  }
+  .aboutusImage{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ourCourseWatermark{
+    display: none;
+  }
+}
+@media screen and (max-width: 750px){
+  .aboutusImage {
+    min-height: 300px !important;
+    min-width: 250px !important;
+  }
+  .blurredOverlayCard {
+    width: 175px !important;
+    height: 230px !important;
+  }
+  .pageHeading h1 {
+    width: 100%;  
+  }
+  .pageHeading p {
+    width: 100%;
+  }
+  
+  .blurredOverlayCard .title{
+   font-size: 15px;
+  }
+
+  .biggerHeading {
+    font-size: 55px !important;
+    line-height: 65px !important;
+  }
+  .ourCourseSectionWidth{
+    flex: 1.7; 
+    min-width: 200px;
+  }
+  .ourServicesBanner{
+    display: block;
+    border-radius: 10px / 10px;
+    width: 100%;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .contactFormSec h1, .content h1{
+    font-size: 40px !important;
+    line-height: 50px !important;
+    margin: 0;
+  }
+}
+
+/*  600px and 650px */
+@media screen and (max-width: 600px){
+  .mt-1 {
+    margin-left: 80px;
+    margin-top: 1rem;
+    margin-bottom: 50px;
+  }
+  
+  .topRanked .column .mt-1 {
+    margin-left: 0 !important;
+  }
+  
+  .blurredOverlayCard {
+    width: 270px !important;
+    height: 270px !important;
+  }
+  .CTABtn {
+    width: 150px;
+  }
+  .colContain {
+    flex-direction: column !important;
+  }
+  .cardStack {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .container .biggerHeading {
+    font-size: 42px !important;
+    line-height: 50px !important;
+  }
+  .chooseText .whoAreYouTxt {
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+  .container{
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .ourServicesSec{
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .contactFormSec{
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  .contactFormSec .row .column .btn-1, .contactFormSec .row .column .btn-2{
+    width: 90vw;
+  }
+  .freeDealSheetSec .content{
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+  .freeDealSheetVideo{
+    height: 500px;
+  }
+  .testimonialSec{
+    padding: 1rem 1rem 10rem 1rem;
+  }
+  .latestBlogSection{
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 650px){
+  .blurredOverlayCard {
+    width: 270px !important;
+    height: 270px !important;
+  }
+  .pageHeading h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .pageHeading p {
+    font-size: 17px;
+  }
+  .biggerHeading {
+    font-size: 45px !important;
+    line-height: 55px !important;
+  }
+  .whoAreYouTxt {
+    font-size: 13px;
+    line-height: 18px !important;
+  }
+  .headingAudience{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .ourCourseSec .pageHeading h1, .testimonialSec .pageHeading h1{
+    font-size: 35px !important;
+    line-height: 45px !important;
+  }
+  .ourCourseSec .pageHeading span, .testimonialSec .pageHeading span{
+    display: none;
+  }
+  .ourCourseSec .pageHeading p, .testimonialSec .pageHeading p{
+    font-size: 13px !important;
+    line-height: 23px !important;
+  }
+}
+
+
+/*  500px and 550px */
+@media screen and (max-width: 500px){
+  .testCardGrid .card h1{
+    font-size: 20px;
+  }
+  .contactForm {
+    min-width: auto !important;
+  }
+  .biggerHeading {
+    font-size: 60px !important;
+    line-height: 70px !important;
+    margin-top: -20px !important;
+  }
+  .whoAreYouTxt {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin-top: -20px !important;
+  }
+  .mt-1 {
+    padding-left: 0px !important;
+    margin-bottom: 50px !important;
+    margin-left: 0px !important;
+  }
+  .CTABtn {
+    margin-right: 10px !important;
+    width: 145px !important;
+  }
+  .whatWeDo {
+    width: 145px !important;
+  }
+  .CTABoxesUnderHeader{
+    width: 80%;
+  }
+  .ourCourseSec .pageHeading h1, .testimonialSec .pageHeading h1{
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .ourCourseSec .pageHeading span, .testimonialSec .pageHeading span{
+    display: none;
+  }
+  .ourCourseSec .pageHeading p, .testimonialSec .pageHeading p{
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+}
+@media screen and (max-width: 550px){
+  .container .biggerHeading {
+    font-size: 70px ;
+    line-height: 80px;
+    margin-top: -20px;
+  }
+  .topRanked .topImage .topRankedImage {
+    min-width: 0 !important;
+  }
+  .whoAreYouTxt {
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: -20px;
+  }
+  .mt-1 {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .CTABtn {
+    margin-right: 10px !important;
+    width: 155px;
+  }
+}
+
+/*  400px and 450px */
+@media screen and (max-width: 400px){
+  .mt-1 .CTABtn {
+    width: 120px !important;
+  }
+  .mt-1 .whatWeDo {
+    width: 120px !important;
+  }
+  .chooseText .mt-1 {
+    margin-bottom: 10px !important;
+  }
+  .colTwo .cardStack .blurredOverlayCard {
+    width: 240px !important;
+    height: 240px !important;
+  }
+  .pageHeading h1 {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+  .pageHeading p {
+    font-size: 15px !important;
+  }
+  .ourCourseSec .pageHeading h1, .testimonialSec .pageHeading h1{
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .ourCourseSec .pageHeading span, .testimonialSec .pageHeading span{
+    display: none;
+  }
+  .ourCourseSec .pageHeading p, .testimonialSec .pageHeading p{
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+}
+@media screen and (max-width: 450px){
+  .biggerHeading {
+    font-size: 50px !important;
+    line-height: 60px !important;
+    margin-bottom: 10px !important;
+    margin-top: -20px !important;
+  }
+  .whoAreYouTxt {
+    font-size: 13px !important;
+    line-height: 20px !important;
+    margin-top: 5px !important;
+  }
+  .CTABtn {
+    margin-right: 10px !important;
+    width: 130px !important;
+  }
+  .whatWeDo {
+    width: 130px !important;
+    margin-right: 0 !important;
+  }
+  .mt-1 {
+    padding-left: 0px !important;
+    margin-bottom: 50px !important;
+  }
+}
+
+/*  300px * Lowest resolution needed for our site * */
+@media screen and (max-width: 300px){}

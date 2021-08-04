@@ -6,7 +6,7 @@ const About = () => {
         <>
             <Layout OnHomePage={false} className="container1">
                 <div>
-                    <div className="container">
+                    <div className="container aboutPage">
                         <img className="aboutusImage mt-5" src="/assets/images/9E0A1174 (1).jpg" />
                         <div className="pageHeading" style={{marginBottom: "0", width: "50%"}}>
                             <span>about us</span>
@@ -30,12 +30,12 @@ const About = () => {
                     </div>
                 </div>
                 <div className="container" style={{background: "#111111"}}>
-                <div className="row">
+                <div className="row aboutPage topRanked">
                     <div className="pageHeading" style={{marginBottom: "0"}}>
                         <span>Top Ranked</span>
                         <h1 style={{width: "70%", fontSize: "50px", lineHeight: "60px", maxWidth: "100%"}}>An inspirational software & SaaS sales coach & mentor</h1>
                     </div> 
-                    <div className="column" style={{flex: 1}}>
+                    <div className="column topImage" style={{flex: 1}}>
                         <img className="topRankedImage mt-5" src="/assets/images/inspiration-software-banner-latest.jpg" ALIGN="right" />
                     </div>
                     <div className="column" style={{flex: 1.2, padding: '2rem'}}>

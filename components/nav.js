@@ -50,6 +50,9 @@ const Nav = ({IsHomePage, IsContactPage}) => {
               <i className="fab fa-instagram"></i>
             </Link>
           </li>
+          <div className="menu hiddenMenu" id="openNav">
+            <i className="fas fa-bars"></i>
+          </div>
         </ul>
     </nav> : 
      <>

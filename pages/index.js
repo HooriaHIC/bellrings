@@ -8,7 +8,7 @@ const Home = () => {
     <>
     <Layout className="container" OnHomePage={true} dontShowFooter={true}>
       <h1 className="biggerHeading">Sell more <br /> Enterprise software <br /> and SaaS.</h1>
-      <div className="row">
+      <div className="row colContain">
         <div className="column chooseText" style={{"flex": 1}}>
           <p className="whoAreYouTxt">
             Please Select, Who Are You From The Respective Boxes In Order To Proceed <br /> Forward.
