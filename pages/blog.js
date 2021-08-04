@@ -4,8 +4,12 @@ import Layout from "../components/layout";
 import Filter from "../components/filter";
 import Seo from "../components/seo";
 import { fetchAPI } from "../lib/api";
+import { SharedJs } from "../components/Js/main";
 
 const Blog = ({ articles, categories, blogpage }) => {
+
+    SharedJs()
+
     return (
         <Layout OnHomePage={false} className="container">
           <Seo seo={blogpage.seo} />
