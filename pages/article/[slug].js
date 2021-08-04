@@ -21,7 +21,7 @@ const Article = ({ article, categories }) => {
     <Layout categories={categories}>
       
       <Seo seo={seo} />
-          <div className="column SingleBlogPageHeader" style={{"flex": 1}}>
+          <div className="column SingleBlogPageHeader" style={{"flex": 1, backgroundImage: `linear-gradient(transparent, rgba(0, 0, 0, 0.6)), url(${imageUrl})`}}>
             <div
               className="pageHeading"
             >
